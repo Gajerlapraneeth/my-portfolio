@@ -5,10 +5,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
 body{
     background-color: #0a0a0a;
     color: white;
@@ -51,7 +47,7 @@ body{
 .home{
     min-height: 100vh;
     display: flex;
-    justify-content: space-between;
+ justify-content: space-between;
     align-items: center;
     padding: 80px;
 }
@@ -78,7 +74,7 @@ body{
 
 .home-left p{
     margin-top: 20px;
-    font-size: 20px;
+ font-size: 20px;
     line-height: 35px;
     color: #cfcfcf;
 }
@@ -109,6 +105,8 @@ body{
 .home-right{
     width: 40%;
     text-align: center;
+    
+
 }
 
 .home-right img{
@@ -116,9 +114,16 @@ body{
     border-radius: 50%;
     border: 5px solid #A855F7;
     box-shadow: 0px 0px 30px rgba(168, 85, 247, 0.5);
+     transition: 0.3s;
+    box-shadow: 0px 0px 15px rgba(168, 85, 247, 0.2);
+}
+.home-right img:hover{
+     transform: translateY(-15px);
+    box-shadow: 0px 0px 25px rgba(63, 11, 112, 0.5);
+
 }
 
-/* SECTION TITLE */
+/* section title*/
 
 .section-title{
     text-align: center;
@@ -172,6 +177,7 @@ body{
 .skill-card:hover{
     background-color: #A855F7;
     transform: scale(1.05);
+    transform: translateY(-15px);
 }
 
 /* PROJECTS */
@@ -276,55 +282,12 @@ body{
     transition: 0.3s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .social-links a:hover{
     background-color: #A855F7;
 }
 
 /* MOBILE RESPONSIVE */
-
+/* changing size according to display with width 768px */
 @media screen and (max-width: 768px){
 
     .navbar{
