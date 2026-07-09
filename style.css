@@ -245,6 +245,9 @@ body{
     transition: 0.3s;
 }
 
+.certificate-card {
+    cursor: pointer;
+}
 .certificate-card:hover{
     background-color: #A855F7;
 }
